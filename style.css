@@ -185,7 +185,9 @@ header ul li a:hover {
     border-radius: 8px;
     padding: 16px 20px;
     margin: 10px 0 0 0;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    column-gap: 10px;
     text-align: center;
 
     font-family: 'DM Sans';
