@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #171718;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 50px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 34px;
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0 10px 0;
+    color: #fff;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    height: 85px;
+}
+
+.image-header,
+.image-footer {
+    width: 60px;
+    height: 60px;
+}
+
+.image-header img,
+.image-footer img {
+    width: 100%;
+}
+
+header ul {
+    list-style: none;
+}
+
+header ul li {
+    display: inline;
+    margin-left: 10px;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    transition: 0.5s;
+    color: #47D16E;
+}
+
+.button-header a:nth-child(1),
+.button-header a:nth-child(2) {
+    margin-right: 10px;
+}
+
+.button-header a {
+    color: #fff;
+    text-decoration: none;
+    background-color: #47D16E;
+    padding: 10px 20px;
+    width: 169px;
+    height: 48px;
+    border-radius: 8px;
+}
+
+.button-header a:hover {
+    background-color: rgba(71, 209, 110, 0.7);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.image-section img {
+    width: 100%;
+    height: 630px;
+}
+
+.about-section .container {
+    display: flex;
+    align-items: center;
+    column-gap: 70px;
+    padding: 20px 0 0 0;
+}
+
+.about-section img {
+    width: 300px;
+    border-radius: 15px;
+}
+
+.about-section h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.about-section,
+.skills-section,
+.behavior-section {
+    color: #fff;
+    padding: 10px 0;
+}
+
+.skills-section p {
+    margin-bottom: 20px;
+}
+
+.cards-section {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 25px;
+}
+
+.card {
+    width: 350px;
+    height: 300px;
+    background-color: #1F1F21;
+    border-radius: 8px;
+    padding: 20px 20px;
+    margin-top: 20px;
+    box-sizing: border-box;
+
+    color: #fff;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.card h3 {
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0.25px;
+    margin: 20px 0;
+}
+
+.card p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.44px;
+}
+
+.behavior-section .card {
+    margin-bottom: 20px;
+}
+
+.behavior-section p {
+    margin-top: 10px;
+}
+
+.curriculum-section,
+.curriculum-section ul li a {
+    color: #fff;
+}
+
+.curriculum-section h3 {
+    margin: 10px 0 10px 0;
+}
+
+.curriculum-section ul {
+    margin: 0 0 0 24px;
+}
+
+.curriculum-section ul li {
+    margin-bottom: 10px;
+}
+
+.download-cv {
+    border: 1px solid #fff;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin: 10px 0 0 0;
+    display: inline-block;
+    text-align: center;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FAFAFA;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.download-cv:hover {
+    background-color: #dddddd5c;
+    transition: 0.5s;
+}
+
+.contact-section {
+    padding: 0 0 24px 0;
+}
+
+.form-area {
+    /* width: 450px; */
+    width: 100%;
+    /* height: 584px; */
+    height: 608px;
+    padding: 0 24px;
+    background-color: #1F1F21;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #fff;
+    margin: 0 0 24px 0;
+}
+
+.form-area form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputs {
+    width: 100%;
+    padding: 24px 0 24px 0;
+}
+
+.inputs input,
+.inputs textarea {
+    color: #fff;
+    margin: 8px auto;
+    display: block;
+}
+
+.inputs label {
+    margin-left: 27px;
+}
+
+.inputs label,
+.contact-input::placeholder,
+.contact-message::placeholder,.contact-button {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.44px;
+}
+
+.contact-input {
+    /* width: 354px; */
+    width: calc(100% - 96px);
+    height: 30px;
+    padding: 16px 20px;
+    border-radius: 8px;
+    background-color: #1F1F21;
+    border: 1px solid #A0A0A1;
+    outline: none;
+}
+
+.contact-input:focus,
+.contact-message:focus {
+    outline: 2px solid #fff;
+    transition: 0.3s;
+}
+
+.contact-input:focus::placeholder,
+.contact-message:focus::placeholder {
+    color: #fff;
+    transition: 0.3s;
+}
+
+.contact-message {
+    /* width: 354px; */
+    width: calc(100% - 96px);
+    height: 100px;
+    padding: 16px 20px;
+    border-radius: 8px;
+    background-color: #1F1F21;
+    border: 1px solid #A0A0A1;
+    outline: none;
+}
+
+.contact-button {
+    width: 354px;
+    height: 48px;
+    background-color: #47D16E;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.contact-button:hover {
+    background-color: rgba(71, 209, 110, 0.7);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+footer {
+    background-color: #131414;
+    padding: 48px 0 56px 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content p {
+    margin-bottom: 24px;
+}
+
+.home-footer a,
+.contact-footer a,
+.social-footer a {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.15px;
+    color: #47D16E;
+    text-decoration: none;
+}
+
+.footer-content .item a {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-content .item a:hover {
+    text-decoration: underline;
+}
+
+.footer-content .socials {
+    text-decoration: none;
+    margin: 0 10px 0 0;
+}
+
+.footer-content a:last-child img {
+    width: 24px;
+    height: 24px;
+    border-radius: 3px;
+}
+
+.hr .container {
+    max-width: 1200px;
+    padding: 0 50px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.hr {
+    width: 100%;
+    height: 0.5px;
+    border: 1px solid #26292D;
+}
+
+.hr p {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    color: #fff;
+    margin-top: 16px;
+}
