@@ -1,4 +1,4 @@
-# Portfólio Pessoal
-Portfólio Pessoal with HTML & CSS
+# Personal Portfolio - Versions
+Personal portfolio with HTML & CSS
 
-[Run here](https://rodrigocloureiro.github.io/portfolio/)
+[Run here -> Main](https://rodrigocloureiro.github.io/portfolio/)
