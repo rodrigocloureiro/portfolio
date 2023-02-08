@@ -27,7 +27,7 @@ h2 {
     text-align: center;
     font-weight: 600;
     margin: 10px 0 10px 0;
-    color: #fff;
+    color: #47D16E;
 }
 
 header .container {
@@ -36,6 +36,10 @@ header .container {
     align-items: center;
     color: #fff;
     height: 85px;
+}
+
+.menu-mobile {
+    display: none;
 }
 
 .image-header,
@@ -61,6 +65,8 @@ header ul li {
 header ul li a {
     color: #fff;
     text-decoration: none;
+    font-size: 16px;
+    font-weight: 300;
 }
 
 header ul li a:hover {
@@ -95,6 +101,7 @@ header ul li a:hover {
 
 .about-section .container {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     column-gap: 70px;
     padding: 20px 50px 0 50px;
@@ -108,6 +115,10 @@ header ul li a:hover {
 .about-section h2 {
     margin: 0;
     padding: 0;
+}
+
+.about-content p {
+    max-width: 730px;
 }
 
 .about-section,
@@ -180,13 +191,23 @@ header ul li a:hover {
     margin-bottom: 10px;
 }
 
+.curriculum-section ul li a:hover {
+    color: #47D16E;
+}
+
+.projects-hover {
+    color: #47D16E;
+}
+
 .download-cv {
     border: 1px solid #fff;
     border-radius: 8px;
-    padding: 16px 20px;
+    width: 139.91px;
+    height: 50px;
     margin: 10px 0 0 0;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     column-gap: 10px;
     text-align: center;
 
@@ -198,6 +219,8 @@ header ul li a:hover {
     color: #FAFAFA;
     text-decoration: none;
     transition: 0.5s;
+
+    box-sizing: border-box;
 }
 
 .download-cv:hover {
@@ -205,14 +228,18 @@ header ul li a:hover {
     transition: 0.5s;
 }
 
+.download-cv-click,
+.download-cv-click:hover {
+    background-color: #47D16E;
+    border: #47D16E;
+}
+
 .contact-section {
     padding: 0 0 24px 0;
 }
 
 .form-area {
-    /* width: 450px; */
     width: 100%;
-    /* height: 584px; */
     height: 608px;
     padding: 0 24px;
     background-color: #1F1F21;
@@ -247,7 +274,8 @@ header ul li a:hover {
 
 .inputs label,
 .contact-input::placeholder,
-.contact-message::placeholder,.contact-button {
+.contact-message::placeholder,
+.contact-button {
     font-family: 'DM Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -256,7 +284,6 @@ header ul li a:hover {
 }
 
 .contact-input {
-    /* width: 354px; */
     width: calc(100% - 96px);
     height: 30px;
     padding: 16px 20px;
@@ -279,7 +306,6 @@ header ul li a:hover {
 }
 
 .contact-message {
-    /* width: 354px; */
     width: calc(100% - 96px);
     height: 100px;
     padding: 16px 20px;
@@ -287,6 +313,7 @@ header ul li a:hover {
     background-color: #1F1F21;
     border: 1px solid #A0A0A1;
     outline: none;
+    resize: none;
 }
 
 .contact-button {
@@ -378,4 +405,319 @@ footer .container {
     letter-spacing: 0.4px;
     color: #fff;
     margin-top: 16px;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    
+    /* IMAGE-SECTION */
+
+    .image-section img {
+        height: 315px;
+    }
+
+    /* ABOUT SECTION */
+
+    .about-section .container {
+        flex-wrap: nowrap;
+    }
+
+    /* CARDS */
+
+    .card {
+        max-width: 350px;
+        width: 30.84%;
+        height: auto;
+    }
+    .card h3 {
+        font-size: 25px;
+        margin: 10px 0;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+    /* HEADER */
+
+    .navbar,
+    .button-header {
+        display: none;
+    }
+    .menu-mobile-icon {
+        cursor: pointer;
+    }
+    .menu-mobile {
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        padding: 20px 50px;
+        position: absolute;
+        top: 85px;
+        left: calc(-100% - 65px);
+        background-color: #171718;
+        border-top: 1px solid #2d3136;
+        transition: 1.5s;
+        box-sizing: border-box;
+    }
+    .menu-mobile nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .menu-mobile nav ul li {
+        margin: 0 0 24px 0;
+        cursor: pointer;
+        font-weight: 200;
+        line-height: 15.31px;
+    }
+    .menu-open {
+        left: 0;
+        transition: 1s;
+    }
+    .bar {
+        width: 25px;
+        height: 4px;
+        border-radius: 5px;
+        background-color: #fff;
+    }
+    .mb-5 {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    /* UTILITIES */
+
+    .container {
+        padding: 0 30px;
+    }
+
+    /* HEADER */
+
+    .navbar,
+    .button-header {
+        display: none;
+    }
+    .menu-mobile-icon {
+        cursor: pointer;
+    }
+    .menu-mobile {
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        padding: 20px 30px;
+        position: absolute;
+        top: 85px;
+        left: calc(-100% - 65px);
+        background-color: #171718;
+        border-top: 1px solid #2d3136;
+        transition: 1.5s;
+        box-sizing: border-box;
+    }
+    .menu-mobile nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .menu-mobile nav ul li {
+        margin: 0 0 24px 0;
+        cursor: pointer;
+        font-weight: 200;
+        line-height: 15.31px;
+    }
+    .menu-open {
+        left: 0;
+        transition: 1s;
+    }
+    .bar {
+        width: 25px;
+        height: 4px;
+        border-radius: 5px;
+        background-color: #fff;
+    }
+    .mb-5 {
+        margin-bottom: 5px;
+    }
+
+    /* IMAGE SECTION */
+
+    .image-section {
+        display: none;
+    }
+
+    /* ABOUT SECTION */
+
+    .about-section .container p {
+        text-align: center;
+    }
+    .about-image {
+        width: 100%;
+        text-align: center;
+    }
+    .about-image img {
+        width: 200px;
+    }
+    .about-section h2 {
+        margin: 10px 0;
+    }
+
+    /* SKILLS SECTION */
+
+    .skills-section .container h2 + p {
+        text-align: center;
+    }
+
+    /* BEHAVIOR SECTION */
+
+    .behavior-text {
+        text-align: center;
+    }
+    .card {
+        width: auto;
+        height: auto;
+    }
+    .card img {
+        height: 25px;
+    }
+    .card h3 {
+        margin: 0;
+    }
+    .card p {
+        margin: 0;
+    }
+
+    /* CURRICULUM SECTION */
+
+    .curriculum-section .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .curriculum-section ul {
+        width: 151px;
+    }
+
+    /* CONTACT SECTION */
+
+    .form-button {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .form-area label {
+        margin-left: 4px;
+    }
+    .contact-input,
+    .contact-message,
+    .contact-button {
+        width: calc(100% - 48px);
+    }
+    .contact-button {
+        padding: 0 20px;
+        box-sizing: content-box;
+    }
+
+    /* FOOTER */
+    
+    footer .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-content {
+        width: 73px;
+    }
+    .image-footer {
+        margin: 0 0 24px 0;
+    }
+    .footer-content .socials {
+        margin:  0;
+    }
+    .hr {
+        margin: 24px 0 0 0;
+    }
+}
+
+@media (min-width: 431px) and (max-width: 767px) {
+
+    /* CURRICULUM SECTION */
+
+    .curriculum-section ul {
+        width: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .curriculum-section ul:not(.projects) {
+        column-gap: 59px;
+    }
+    .projects {
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+    .projects li {
+        width: 168px;
+    }
+
+    /* FOOTER */
+
+    footer .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+        text-align: left;
+    }
+    
+}
+
+@media (max-width: 320px) {
+
+    /* UTILITIES */
+
+    h2 {
+        font-size: 22px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+
+    /* HEADER */
+
+    .menu-mobile nav ul li {
+        font-size: 16px;
+    }
+
+    /* ABOUT SECTION */
+
+    .about-section .container p {
+        font-size: 14px;
+    }
+
+    /* SKILLS SECTION */
+
+    .skills-section .container h2 + p {
+        font-size: 14px;
+    }
+
+    /* BEHAVIOR SECTION */
+
+    .behavior-text {
+        font-size: 14px;
+    }
+    .card h3 {
+        font-size: 20px;
+    }
+    .card p {
+        font-size: 14px;
+    }
+
+    /* CURRICULUM SECTION */
+
+    .curriculum-section ul {
+        font-size: 14px;
+    }
+
+    /* CONTACT SECTION */
+
+    .form-area label {
+        font-size: 14px;
+    }
+
 }

@@ -39,19 +39,40 @@
                 <a href="#curriculum" title="Currículo">Currículo</a>
                 <a href="https://www.linkedin.com/in/rodrigocostaloureiro/" target="_blank" title="Contato">Contato</a>
             </div>
+            <div class="menu-mobile-icon">
+                <div class="bar mb-5"></div>
+                <div class="bar mb-5"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="menu-mobile">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="https://github.com/rodrigocloureiro" target="_blank" title="GitHub">GitHub</a>
+                        </li>
+                        <li>
+                            <a href="#curriculum" title="Currículo">Currículo</a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/rodrigocostaloureiro/" target="_blank" title="Contato">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <div class="image-section">
-        <!-- <img src="img/wallpaperTwo.png" alt="Wallpaper"> -->
-        <img src="img/Group3.png" alt="Wallpaper">
+        <img src="img/wallpaperTwo.png" alt="Wallpaper">
+        <!-- <img src="img/Group3.png" alt="Wallpaper"> -->
     </div>
     <main>
         <div id="about" class="about-section">
             <div class="container">
-                <div>
-                    <img src="img/me.png" alt="Imagem Rodrigo">
+                <div class="about-image">
+                    <!-- <img src="img/me.png" alt="Imagem Rodrigo"> -->
+                    <img src="img/about-image.png" alt="Imagem Avatar">
                 </div>
-                <div>
+                <div class="about-content">
                     <h2>Quem Sou</h2>
                     <p>Olá! Meu nome é Rodrigo, tenho 21 anos e estou cursando Engenharia de Software. Em meu processo de desenvolvimento utilizo ferramentas como VSCode, para código e Figma para design, que me auxiliam no desenvolvimento dos projetos.</p>
                 </div>
@@ -61,7 +82,7 @@
         <div id="skills" class="skills-section">
             <div class="container">
                 <h2>Habilidades</h2>
-                <p>Sou desenvolvedor, atualmente morando em Rio de Janeiro, Brasil. Gosto da ideia de trabalho em equipe, acho que é uma forma de me conectar com novas habilidades e trocar conhecimentos com a equipe, a fim de melhorar a produtividade no desenvolvimento. Gosto de descobrir coisas novas diariamente, por isso estou constantemente aprendendo e pesquisando novas tendências. Procuro buscar o máximo de Feedback possível nos projetos, a fim de melhorar e poder fazer código não só funcionais, mas também otimizados , por isso gosto de trabalhar em estreita colaboração com todos os integrantes da equipe.</p>
+                <p>Sou desenvolvedor, atualmente morando no Rio de Janeiro, Brasil. Gosto da ideia de trabalho em equipe, acho que é uma forma de me conectar com novas habilidades e trocar conhecimentos com a equipe, a fim de melhorar a produtividade no desenvolvimento. Gosto de descobrir coisas novas diariamente, por isso estou constantemente aprendendo e pesquisando novas tendências. Procuro buscar o máximo de Feedback possível nos projetos, a fim de melhorar e poder fazer código não só funcionais, mas também otimizados , por isso gosto de trabalhar em estreita colaboração com todos os integrantes da equipe.</p>
                 <div class="cards-section">
                     <div class="card">
                         <img src="img/Icon.png" alt="Ícone de desenvolvimento">
@@ -102,7 +123,7 @@
                         <p>Sou capaz de desenvolver recebendo e interpretando o feedback que me é fornecido para melhorar a qualidade do meu trabalho nos projetos.</p>
                     </div>
                 </div>
-                <p>
+                <p class="behavior-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis nisi officia, vero laboriosam hic placeat, dolores iusto ea numquam perspiciatis maxime in sint, ullam cum aliquam voluptatem distinctio ratione consequatur? Porro quos id mollitia impedit expedita distinctio tenetur quia exercitationem vitae dolor enim tempora in, quisquam numquam voluptatibus quasi dignissimos recusandae repellat! Quibusdam aspernatur modi repellendus facere vero, obcaecati a? Eaque adipisci, accusantium iste aut aliquid nihil ratione illo fuga ullam, natus, error ipsa aspernatur dolore eius unde consequatur animi ducimus placeat perferendis a dicta!
                 </p>
             </div>
@@ -123,7 +144,7 @@
                 </ul>
     
                 <h3>Alguns Projetos</h3>
-                <ul>
+                <ul class="projects">
                     <li>
                         <a href="https://login-css.rodrigocosta34.repl.co/" target="_blank" title="Tela Login">Tela Login</a>
                     </li>
@@ -176,8 +197,8 @@
                         </div>
     
                         <div class="inputs">
-                            <label for="message">Sua mensagem</label>
-                            <textarea name="message" id="message" class="contact-message" placeholder="Olá..."></textarea>
+                            <label for="message">Sua Mensagem</label>
+                            <textarea name="message" id="message" class="contact-message" placeholder="Olá..." maxlength="714" required></textarea>
                         </div>
     
                         <div class="form-button">
@@ -230,5 +251,7 @@
             <p>© 2023 Rodrigo</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
